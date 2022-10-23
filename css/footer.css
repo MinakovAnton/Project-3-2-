@@ -1,0 +1,29 @@
+.footer {
+   padding: 162px 0 82px;
+   font-size: 20px;
+   line-height: 36px;
+   letter-spacing: 0.04em;
+   color: rgba(31, 31, 31, 0.7);
+}
+.footer a {
+   font-size: 20px;
+   line-height: 36px;
+   letter-spacing: 0.04em;
+   color: rgba(31, 31, 31, 0.7);
+   text-decoration: underline;
+}
+.footer__row {
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer__nav {
+   display: flex;
+   column-gap: 104px;
+}
+.footer__email {
+}
+.footer__socials {
+   display: flex;
+   column-gap: 26px;
+}

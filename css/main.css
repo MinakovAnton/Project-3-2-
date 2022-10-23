@@ -1,0 +1,29 @@
+@import "./reset.css";
+@import "./header.css";
+@import "./section.css";
+@import "./video.css";
+@import "./footer.css";
+@import "./fonts/Gilroy/stylesheet.css";
+
+/*font-family: 'Work Sans', sans-serif;*/
+/*font-family: "Gilroy", sans-serif;*/
+html {
+    scroll-behavior: smooth; /*функция добовляет плавную прокрутку сайта при переходе по ссылкам*/
+}
+body {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+}
+.container {
+    max-width: 1750px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.container-right {
+    padding-left: calc((100% - 1750px) / 2 + 15px);
+}
+/*проводим вычисления прописываем кальк(calc - для автоматичиского вычисления в случае изменения размера экрана от 100%ширины экрана мы вычитаем ширину контейнера 1750px полсе этого ответ делим на 2 и прибавляем отступ(падинг) в 15px ) пробелы между арефметичискими знаками обязательно */
+
+.none {
+    display: none;
+}

@@ -31,7 +31,7 @@
                         <li><a href="#!" class="link">about us</a></li>
                         <li><a href="#!" class="btn">Let’s Talk</a></li>
                     </ul>
-                    <button class="nav__btn">
+                    <button class="nav__btn " id="openMobileNav">
                         <img src="./img/icons/mobile-nav-btn.svg" alt="Mobile nav">
                     </button>
                 </nav>
@@ -61,7 +61,7 @@
     </header>
 
     <main class="" id="main">
-        <section class="case-studies ">
+        <section class="case-studies">
             <div class="container">
                 <div class="case-studies__title">
                     <h2 class="title">Case Studies </h2>
@@ -103,7 +103,7 @@
 
         </section>
 
-        <section class="about ">
+        <section class="about">
             <div class="container">
                 <div class="about__title">
                     <h2 class="title">We are Invoriem</h2>
@@ -118,7 +118,13 @@
                         <button class="video__btn" id="video-btn">
                             <img src="./img/icons/btn-play.svg" alt="Play">
                         </button>
-                        <img class="video__picture" src="./img/video-picture.jpg" alt="">
+
+                        <picture class="video__picture">
+                            <!-- тег picture позволяет задавать разныйы размер картинки для разного размера сайта-->
+                            <source media="(max-width:600px)" srcset="./img/video-picture-mobile.jpg">
+                            <img src="./img/video-picture.jpg" alt="Preview">
+                        </picture>
+
 
                         <video class="video__object" id="video-file" loop>
                             <source src="./img/video.mp4" type="video/mp4">
@@ -131,7 +137,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer ">
+    <footer class="footer">
         <div class="container">
             <div class="footer__row">
                 <div class="footer__copyright">Copyright © 2020 Invoriem</div>
@@ -148,6 +154,54 @@
             </div>
         </div>
     </footer>
+
+
+    <section class="mobile-nav none" id="mobileNav">
+
+        <div class="mobile-nav__header">
+            <a href="#!">
+                <img class="mobile-nav__logo" src="./img/logo.svg" alt="Logo">
+            </a>
+            <button class="mobile-nav__btn" id="closeMobileNav">
+                <img src="./img/icons/mobile-nav-btn.svg" alt="Close nav">
+            </button>
+        </div>
+
+        <nav class="mobile-list">
+            <ul>
+                <li><a href="#!">Hello</a></li>
+                <li><a href="#!">Bonjour</a></li>
+                <li><a href="#!">Ola</a></li>
+                <li><a href="#!">Marhabaan</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-contacts">
+            <h4 class="mobile-contacts__title">Contact us</h4>
+            <a href="mailto:info@invoriem.com" class="mobile-contacts__email">info@invoriem.com</a><br>
+            <a href="tel:+55512345258" class="mobile-contacts__phone">+555 1234 52 58</a>
+            <address class="mobile-contacts__adress">
+                3517 W. Gray St. <br>
+                Utica, Pennsylvania <br>
+                57867</address>
+        </div>
+
+        <footer class="mobile-footer">
+            <div class="mobile-footer__email"><a href="mailto:info@invoriem.com">info@invoriem.com</a></div>
+
+
+            <div class="mobile-socials">
+                <a href="#!"></a><img src="./img/socials/instagram.svg" alt="link"></a>
+                <a href="#!"></a><img src="./img/socials/facebook.svg" alt="link"></a>
+                <a href="#!"></a><img src="./img/socials/twitter.svg" alt="link"></a>
+                <a href="#!"></a><img src="./img/socials/linkedIn.svg" alt="link"></a>
+            </div>
+
+            <p class="mobile-footer__copyright">Copyright © 2020 Invoriem</p>
+
+        </footer>
+
+    </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="

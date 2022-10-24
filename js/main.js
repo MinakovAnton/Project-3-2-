@@ -38,7 +38,7 @@ const video = document.querySelector('#video-file');
 /*слушаем клик по врапперу , если видео не играло изначально F1, то мы убираем превью F2,убираем оверлэй F3, убираем кнопку с картинки F4, включаем видео F5, если видео уже играло то мы его останавливаем F6, добавляем оверлей F7, добавляем кнопку F8.*/
 videoWrapper.addEventListener('click', function () {
    if (video.paused) {/*F1*/
-      videoPicture.classList.add('none');/*F2*/
+      videoPicture.classList.add('hidden');/*F2*/
       videoWrapper.classList.remove('video-overlay');/*F3*/
       videoBtn.classList.add('none');/*F4*/
       video.play();/*F5*/
@@ -49,3 +49,19 @@ videoWrapper.addEventListener('click', function () {
    }
 
 })
+
+/*mobile nav */
+const openNavbtn = document.querySelector('#openMobileNav');
+const closeNavbtn = document.querySelector('#closeMobileNav');
+const mobileNav = document.querySelector('#mobileNav');
+
+
+openNavbtn.onclick = function () {
+   mobileNav.classList.remove('none');
+   document.body.classList.add('no-scroll');
+}
+closeNavbtn.onclick = function () {
+   mobileNav.classList.add('none');
+   document.body.classList.remove('no-scroll');
+}
+
